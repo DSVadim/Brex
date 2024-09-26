@@ -100,14 +100,6 @@ body{
     @include Flex(column, center, center, 30px);
     &-container1 {
       @include Flex(column, center, center, 0px);
-
-      &__title {
-
-      }
-
-      &__text {
-
-      }
     }
     &-boxes{
       @include Flex(row,center,center,0px);
@@ -130,9 +122,6 @@ body{
           border: 1px solid rgb(255, 255, 255);
           border-radius: 10px;
         }
-        &-img{
-
-        }
       }
       &__box2{
         @include Flex(column,center,center,15px);
@@ -153,26 +142,16 @@ body{
           border: 1px solid rgb(0, 0, 0);
           border-radius: 10px;
         }
-        &-img{
-
-        }
     }
     }
   }
   .section4{
     padding: 50px;
     @include Flex(column, flex-start, flex-start,5px);
-    &__title{
-    }
-    &__text{
-    }
     &__btn{
       border: 1px solid rgb(33, 33, 33);
       border-radius: 10px;
       padding: 12px 21px;
-    }
-    &__img{
-
     }
   }
   .title{
@@ -186,9 +165,6 @@ body{
   }
   .section5{
     @include Flex(column, center, center,50px);
-    &__img{
-
-    }
     &-buttons{
       @include Flex(row, center, space-around,0px);
       width: 100%;
@@ -200,11 +176,92 @@ body{
       &__text{
         width: 60%;
         @include Roboto(18px, 400, 24px);
-
       }
     }
     &__text{
       @include Roboto(10px, 400, 20px);
+    }
+  }
+  .section6{
+    @include Flex(column,center,center, 15px);
+    &__title{
+      @include Roboto(40px, 400, 52px);
+    }
+    &-cards{
+      @include Flex(row,center,center,20px);
+      padding: 48px;
+      &__card{
+        @include Flex(column,flex-start,flex-start,20px);
+        &-text{
+          @include Roboto(20px, 400, 28px);
+        }
+        &-link{
+          color: $second-color;
+       }
+      }
+    }
+    &-cards2{
+      @include Flex(row,center,center,50px);
+      &__img{
+        padding: 50px;
+      }
+    }
+  }
+  .section7{
+    padding-top: 150px;
+    @include Flex(row,center,center,20px);
+    &-box1{
+      @include Flex(column,flex-start,flex-start,20px);
+      width: 45%;
+      &__title{
+        @include Roboto(40px, 400, 52px);
+      }
+      &__text{
+        @include Roboto(20px, 400, 32px);
+      }
+      &__buttons{
+        &-btn{
+          padding:13px 32px;
+        }
+        &-btn1{
+          border-color:#0000001A;
+          border-radius: 10px;
+          padding:13px 21px;
+        }
+      }
+    }
+  }
+}
+.footer{
+  background-color: $footer-color;
+  &-con1{
+    padding: 50px;
+    @include Flex(row,flex-start,flex-start,150px);
+    &__nav{
+      @include Flex(column,flex-start,flex-start,0px);
+      &-title{
+        font-weight: bold;
+        color: #BCBDBD;
+      }
+      &-link{
+        color: #BCBDBD;
+      }
+    }
+  }
+  &-socium{
+    padding: 50px;
+    @include Flex(row,flex-start,flex-start,200px);
+    &__icons{
+      @include Flex(row,flex-start,flex-start,25px);
+    }
+  }
+  &-con2{
+    @include Flex(column,flex-start,center,20px);
+    padding-bottom: 121px;
+    &__text{
+      padding:0 48px;
+      @include Roboto(12px, 400, 16px);
+      color: #BCBDBD;
     }
   }
 }
