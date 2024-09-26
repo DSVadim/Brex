@@ -1,0 +1,210 @@
+@import './mixin';
+@import './vars';
+@import './reset';
+body{
+  background-color: $background-color;
+  @include Roboto(12px, 400, 20px);
+  color: $main-color;
+}
+.header {
+  @include Flex(row, center, space-between, 0px);
+  &-container1 {
+    width: 50%;
+    @include Flex(row, center, start, 30px);
+
+    .nav {
+      &__list {
+        @include Flex(row, center, center, 30px);
+      }
+
+      &__item {
+        @include Flex(row, center, center, 8px);
+      }
+    }
+  }
+
+  &-container2 {
+    width: 50%;
+    @include Flex(row, center, end, 30px);
+
+    &__text {
+      padding: 0 20px;
+    }
+
+    &__btn {
+      padding: 10px;
+    }
+  }
+}
+.button{
+  border-radius: 10px;
+  border: 1px solid;
+  color: $background-color;
+  background-color: $second-color;
+}
+.main{
+  .section1{
+    padding-left: 50px;
+    @include Flex(row,center,flex-start,6px);
+    &-container1{
+      width: 50%;
+    }
+    &-box1{
+      &__title{
+        @include Roboto(40px, 400, 52px);
+      }
+      &__buttons{
+        @include Flex(row,flex-start,flex-start,5px);
+        padding-bottom: 50px;
+        &-btn{
+          padding:13px 32px;
+        }
+        &-btn1{
+          border-color:#0000001A;
+          border-radius: 10px;
+          padding:13px 21px;
+        }
+      }
+
+    }
+    &-box2{
+      @include Flex(column,flex-start,flex-start,30px);
+      &__card{
+        @include Flex(column,flex-start,flex-start,15px);
+        &-title{
+          letter-spacing: 0.32px;
+          @include Roboto(16px, 400, 20px);
+        }
+        &-text{
+          letter-spacing: 0.28px;
+          @include Roboto(14px, 400, 20px);
+        }
+        &-link{
+          color: $second-color;
+          @include Roboto(14px, 400, 14px);
+          @include Flex(row,center,center,5px);
+        }
+      }
+    }
+    &-container2{
+      @include Flex(row, flex-end, flex-end,0px);
+      width: 50%;
+    }
+  }
+  .section2{
+    padding-top: 150px;
+    @include Flex(row, flex-start, flex-start,48px);
+  }
+  .section3{
+    padding-top: 150px;
+    @include Flex(column, center, center, 30px);
+    &-container1 {
+      @include Flex(column, center, center, 0px);
+
+      &__title {
+
+      }
+
+      &__text {
+
+      }
+    }
+    &-boxes{
+      @include Flex(row,center,center,0px);
+      &__box1{
+        width: 45%;
+        @include Flex(column,center,center,15px);
+        background-image: url("/img/section3Back.png");
+        &-title{
+          @include Roboto(32px, 400, 40px);
+          color:$background-color;
+        }
+        &-text{
+          @include Roboto(16px, 400, 24px);
+          color:$background-color;
+        }
+        &-btn{
+          color:$background-color;
+          padding: 13px 41px;
+          border: 1px solid rgb(255, 255, 255);
+          border-radius: 10px;
+        }
+        &-img{
+
+        }
+      }
+      &__box2{
+        @include Flex(column,center,center,15px);
+        background-image: url("/img/section3box2.png");
+        margin-left: 15px;
+        width: 45%;
+        &-title{
+          @include Roboto(32px, 400, 40px);
+          color:$main-color;
+        }
+        &-text{
+          @include Roboto(16px, 400, 24px);
+          color:$main-color;
+        }
+        &-btn{
+          color:$main-color;
+          padding: 13px 41px;
+          border: 1px solid rgb(0, 0, 0);
+          border-radius: 10px;
+        }
+        &-img{
+
+        }
+    }
+    }
+  }
+  .section4{
+    padding: 50px;
+    @include Flex(column, flex-start, flex-start,5px);
+    &__title{
+    }
+    &__text{
+    }
+    &__btn{
+      border: 1px solid rgb(33, 33, 33);
+      border-radius: 10px;
+      padding: 12px 21px;
+    }
+    &__img{
+
+    }
+  }
+  .title{
+    @include Roboto(36px, 400, 52px);
+  }
+  .text{
+    @include Roboto(19px, 400, 32px);
+  }
+  .text1{
+    @include Flex(row,center,center,0px)
+  }
+  .section5{
+    @include Flex(column, center, center,50px);
+    &__img{
+
+    }
+    &-buttons{
+      @include Flex(row, center, space-around,0px);
+      width: 100%;
+      &__btn{
+        background: #EDEFEE;
+        padding: 1px 18px;
+        border-color: #EDEFEE;
+      }
+      &__text{
+        width: 60%;
+        @include Roboto(18px, 400, 24px);
+
+      }
+    }
+    &__text{
+      @include Roboto(10px, 400, 20px);
+    }
+  }
+}
+
