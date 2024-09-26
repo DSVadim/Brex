@@ -222,7 +222,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0px; }
+    gap: 0px;
+    text-align: center; }
     .main .section3-boxes__box1 {
       width: 45%;
       display: flex;

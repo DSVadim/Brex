@@ -111,6 +111,7 @@ body{
     }
     &-boxes{
       @include Flex(row,center,center,0px);
+      text-align: center;
       &__box1{
         width: 45%;
         @include Flex(column,center,center,15px);
